@@ -1,0 +1,339 @@
+.navbar .container-fluid{
+   justify-content: space-around;
+}
+.container-fluid{
+   width: auto;
+   padding: 0px;
+}
+.tog{
+   width: auto;
+}
+.navbar-collapse{
+   flex-grow: 0 !important;
+}
+.fa-magnifying-glass{
+   font-size: 20px;
+}
+.d-flex{
+   align-items: center !important;
+}
+.nav-link{
+   color: #000 !important;
+   text-transform: uppercase;
+   font-family: 'Amatic SC', cursive;
+   font-weight: 700;
+   font-size: large;
+}
+.navbar-brand{
+   margin: 0 13rem;
+}
+.navbar-brand img{
+   width: 170px;
+   height: 170px;
+   margin-bottom: -50px;
+   border-radius: 50%;
+}
+.form-control{
+   border-radius: 0 !important;
+   border-bottom: 1px solid #000 !important;
+   border-top: none !important;
+   border-left: none !important;
+   border-right: none !important;
+   padding: 2px !important;
+}
+::-webkit-input-placeholder{
+   font-family: 'Amatic SC', cursive;
+   text-transform: uppercase;
+   font-weight: 400;
+   font-size: 15px !important;
+}
+.fa-cart-shopping{
+   color: black;
+   font-size: 20px;
+}
+
+/* ----------menu--------- */
+
+.bg-secondary{
+   background-color: #F7F7F7 !important;
+}
+.menu .nav-item:hover{
+   background-color: #E5E5E5;
+}
+.menu .nav-item{
+   transition: all .3s ease-in ;
+}
+.menu .nav-item .nav-link{
+   margin: 0 30px;
+   display: block;
+   padding: 11px 20px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #41424A;
+}
+.aboutus{
+   background-image: url(/img/baner-icon/menu-order-now.png);
+   object-fit: cover;
+   background-repeat: no-repeat;
+   background-size: 171px 47px;
+}
+
+
+
+
+/* footer */
+.footer{
+   margin-top: 100px;
+   padding-left: 0;
+   padding-right: 0;
+}
+.mt-3{
+   margin-bottom: -30px;
+}
+.col-sm-4{
+   padding-left: 50px;
+}
+.col-sm-4 img{
+   width: 180px;
+   border-radius: 50%;
+}
+.link-info .nav{
+   align-items: center;
+   padding-top: 50px;
+}
+.Rewards,.careers,.faq,.contact{
+   padding: 15px;
+   font-size: 20px;
+}
+
+.green-footer{
+   background-image: url(/img/baner-icon/footer-green.png);
+   background-repeat: repeat-x;
+   background-position: center;
+   padding-top: 65px;
+}
+.container-fluid .container .row .col .nav .nav-item a{
+   line-height: 1;
+    color: #000;
+    border-left: solid 1px #000;
+    padding-left: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.container .row .col .nav .nav-item.first a{
+   border-left: none !important;
+   padding-left: 0 !important;
+   margin-left: 0 !important;
+}
+.row .col .mail{
+   border-top:none ;
+   border-left: none;
+   border-right: none;
+   border-bottom: 1px solid #000 ;
+   background-color: transparent;
+   outline: none;
+}
+.p-3{
+   padding-bottom: 0! important;
+}
+.show-mobile{
+   display: none;
+}
+
+
+/* reponsive mobile < 740px */
+@media only screen and (max-width: 46.1875em){
+   .navbar-brand img{
+      display: none;
+   }
+   .tog{
+      width: -webkit-fill-available;
+   }
+   .form-control{
+      display: none;
+   }
+   .navone{
+      display: none;
+   }
+   .fa-cart-shopping{
+      display: block;
+   }
+   .navbar-toggler:focus-visible{
+      border: none;
+      outline: none;
+   }
+   .container-fluid.tog{
+      justify-content: space-between !important;
+   }
+   .navbar-collapse.menu.collapse.show .navbar-nav .nav-item{
+      font-size: 9px;
+   }
+   .row{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .link-info .nav .nav-item .nav-link,
+   .p-3,
+   .p-3 label{
+      font-size: 10px;
+   }
+   .link-info .nav{
+      justify-content: space-evenly !important;
+   }
+   .green-footer{
+      background-repeat: repeat-x;
+      background-position: right top;
+      background-size: auto 65px;
+      position: relative;
+      padding-top: 25px;
+      padding-bottom: 20px;
+  
+   }
+   .green-footer::after{
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      top: 64.4px;
+      left: 0;
+      right: 0;
+      background: #d1e383;
+
+   }
+   .logo a img{
+      display: none;
+   }
+   
+}
+
+
+/* reponsive taplet  >= 740px and width < 1024px */
+@media only screen and (min-width : 46.1875em) and (max-width : 63.9375em){
+   .show-mobile{
+      display: block;
+      text-decoration: none;
+   }
+   .navone{
+      display: none;
+   }
+   .container-fluid.tog{
+      justify-content: space-between !important;
+   }
+   .navbar-collapse.menu.collapse.show .navbar-nav .nav-item{
+      font-size: 12px;
+   }
+   .link-info .nav .nav-item .nav-link,
+   .p-3,
+   .p-3 label{
+      font-size: 13px;
+   }
+   .tog{
+      width: -webkit-fill-available;
+   }
+   .row{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .green-footer{
+      background-repeat: repeat-x;
+    background-position: right top;
+    background-size: auto 65px;
+    position: relative;
+    padding-top: 25px;
+   }
+   .green-footer::after{
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background: #d1e383;
+
+   }
+}
+
+
+/* section menu */
+.baner{
+   object-fit: cover;
+   width: 100%;
+   height: 450px;
+}
+.title{
+   text-transform: uppercase;
+   font-family: 'Caveat', cursive;
+   text-align: center;
+   margin-top: 50px;
+   position: relative;
+}
+.title::after{
+   content: "";
+   position: absolute;
+   width: 300px;
+   height: 1px;
+   background-color: rgb(194, 191, 191);
+   top: 50%;
+   right: 50px;
+}
+.title::before{
+   content: "";
+   position: absolute;
+   width: 300px;
+   height: 1px;
+   background-color: rgb(194, 191, 191);
+   top: 50%;
+   left: 50px;
+}
+
+.nav-link{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+.text{
+   color: #000;
+   font-family: 'Amatic SC', cursive;
+}
+.select-menu-showmb{
+   display: none;
+}
+.img-oring img{
+   border-radius: 50%;
+   border: 2px solid #000;
+   width: 78px;
+   height: 78px;
+}
+@media only screen and (max-width: 768px) {
+   .select-menu-showmb{
+       display: block;
+   }
+   .title::after,.title::before{
+       display: none;
+   }
+   .nav{
+       display: none;
+   }
+   .baner{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+   }
+}
+@media only screen and (min-width:768px) and (max-width: 1199px) {
+   .title::after,.title::before{
+       display: none;
+   }
+   .baner{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+   }
+}
