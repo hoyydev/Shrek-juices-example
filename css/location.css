@@ -1,0 +1,65 @@
+iframe{
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.section-title {
+    text-align: left;
+    margin-bottom: 40px;
+}
+.section-title span {
+    text-transform: uppercase;
+    color: red;
+}
+.section-title h2 {
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+.section-title p {
+    color: #707070;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 26px;
+    margin-bottom: 0;
+}
+ul li h4 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+ul li p{
+    line-height: 27px;
+    margin-bottom: 0;
+}
+.place {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #b7b7b7;
+    margin-bottom: 30px;
+}
+textarea {
+    height: 150px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    padding-left: 20px;
+    padding-top: 12px;
+    font-size: 15px;
+    color: #b7b7b7;
+    margin-bottom: 24px;
+    resize: none;
+}
+.send {
+    letter-spacing: 4px;
+    padding: 14px 35px;
+    font-family: 'Amatic SC', cursive;
+}  
+.send:hover{
+    background-color: #000;
+    color: #fff;
+}
