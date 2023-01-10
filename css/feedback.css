@@ -1,0 +1,322 @@
+ * {
+     font-family: 'Amatic SC', cursive;
+     box-sizing: border-box;
+ }
+
+
+ a {
+     text-decoration: none;
+ }
+
+ #testimonials {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width: 100%;
+     background-color: #d6e9aa;
+     padding: 40px;
+ }
+
+
+ .testimonial-heading {
+     letter-spacing: 1px;
+     margin: 30px 0;
+     padding: 10px 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .testimonial-heading h1 {
+     font-size: 3rem;
+     font-weight: 500;
+     background-color: #d6e9aa;
+     color: #fff;
+     padding: 10px 20px;
+ }
+
+ .testimonial-heading span {
+     font-size: 3rem;
+     color: black;
+     margin-bottom: 10px;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+ }
+
+ .testimonial-box-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     width: 100%;
+ }
+
+ .testimonial-box {
+     width: 500px;
+     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+     background-color: #ffffff;
+     padding: 20px;
+     margin: 15px;
+     cursor: pointer;
+ }
+
+ .profile-img {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     overflow: hidden;
+     margin-right: 10px;
+ }
+
+ .profile-img img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center;
+ }
+
+ .profile {
+     display: flex;
+     align-items: center;
+ }
+
+ .name-user {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .name-user strong {
+     color: #0f0f0f;
+     font-size: 1.1rem;
+     letter-spacing: 0.5px;
+ }
+
+ .name-user span {
+     color: #0c0c0b;
+     font-size: 0.8rem;
+ }
+
+ .reviews {
+     color: #f9d71c;
+ }
+
+ .box-top {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 20px;
+ }
+
+ .client-comment p {
+     font-size: 0.9rem;
+     color: #0c0c0b;
+ }
+
+ .testimonial-box:hover {
+     transform: translateY(-10px);
+     transition: all ease 0.3s;
+ }
+
+ body {
+     font-family: 'Lato', georgia;
+     font-size: 25px;
+     color: #000;
+     text-align: center;
+     font-weight: 300;
+     -webkit-font-smoothing: antialiased;
+ }
+
+ #contact-form {
+     max-width: 90%;
+     margin: 0 auto;
+ }
+
+ label {
+     font-weight: 400;
+     cursor: pointer;
+ }
+
+ textarea,
+ input {
+     border: none;
+     outline: none;
+     border-radius: 0;
+     text-align: center;
+     background: none;
+     font-weight: 700;
+     font-family: 'Lato', georgia;
+     font-size: 25px;
+     color: #000;
+     max-width: 90%;
+     padding: 1rem;
+     border: 2px dashed rgba(0, 0, 0, 0);
+     box-sizing: border-box;
+     cursor: text;
+ }
+
+ textarea {
+     text-align: left;
+     /* overflow:hidden; */
+
+     resize: none;
+     width: 90%;
+     border-color: rgba(255, 255, 255, 0)
+ }
+
+ textarea:focus {
+     background-color: rgba(0, 0, 0, 0.04);
+     border: 2px dashed rgba(0, 0, 0, 1);
+ }
+
+ textarea:focus:required:valid {
+     border: 2px solid rgba(0, 0, 0, 0);
+     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+ }
+
+ textarea:required:valid {
+     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+ }
+
+ input {
+     border-bottom: 2px dashed rgba(0, 0, 0, 0.5);
+ }
+
+ input:required,
+ textarea:required {
+     border-bottom: 2px dashed rgba(0, 0, 0, 0.5);
+ }
+
+ input:focus {
+     border-bottom: 2px dashed rgba(0, 0, 0, 1);
+     background-color: rgba(0, 0, 0, 0.04);
+ }
+
+ input:required:valid {
+     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+ }
+
+ input:required:invalid {
+     color: rgba(0, 0, 0, 0.5);
+ }
+
+ ::-webkit-input-placeholder {
+     text-align: center;
+     color: rgba(0, 0, 0, 0.4);
+     font-style: italic;
+     font-weight: 400;
+ }
+
+ :-moz-placeholder {
+     /* Firefox 18- */
+
+     text-align: center;
+     color: rgba(0, 0, 0, 0.4);
+     font-style: italic;
+     font-weight: 400;
+ }
+
+ ::-moz-placeholder {
+     /* Firefox 19+ */
+
+     text-align: center;
+     color: rgba(0, 0, 0, 0.4);
+     font-style: italic;
+     font-weight: 400;
+ }
+
+ :-ms-input-placeholder {
+     text-align: center;
+     color: rgba(0, 0, 0, 0.4);
+     font-style: italic;
+     font-weight: 400;
+ }
+
+ .expanding {
+     vertical-align: top;
+ }
+
+ .send-icn {
+     fill: rgba(0, 0, 0, 1)
+ }
+
+ .send-icn:hover {
+     fill: rgba(0, 0, 0, 1);
+     cursor: pointer;
+ }
+
+ button {
+     background: none;
+     border: none;
+     outline: none;
+     margin: 2vmax;
+ }
+
+ button:hover small {
+     opacity: 1;
+ }
+
+ small {
+     display: block;
+     opacity: 0;
+ }
+
+ .website {
+     opacity: 1;
+     font-size: 16px;
+     color: #000;
+     position: relative;
+     text-align: center;
+     display: block;
+     margin-top: 7%;
+
+ }
+
+ .website a {
+     color: #000;
+ }
+
+ .customer {
+     margin-top: 50px;
+     font-size: 40px;
+     text-align: center;
+     box-sizing: border-box;
+
+ }
+
+
+
+
+ @media(max-width:1060px) {
+     .testimonial-box {
+         width: 45px;
+         padding: 10px;
+     }
+ }
+
+ @media(max-width:790px) {
+     .testimonial-box {
+         width: 100%;
+     }
+
+     .testimonial-heading h1 {
+         font-size: 1.4rem
+     }
+ }
+
+ @media(max-width:430px) {
+     .box-top {
+         flex-wrap: wrap;
+         margin-bottom: 10px;
+     }
+
+     .reviews {
+         margin-top: 10px;
+     }
+ }
+
+ ::selection {
+     color: #fff;
+     background-color: grey;
+ }

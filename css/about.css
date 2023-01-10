@@ -1,0 +1,106 @@
+
+.about-1 {
+    margin: 30px;
+    padding: 5px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.about-1 h1 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.about-1 p {
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+}
+
+.text-center {
+    margin: 25px;
+    padding: 15px 0;
+}
+
+.about-item {
+    margin-bottom: 100px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 90px, 30px;
+    box-shadow: 0 0 9px rgb(178, 214, 178);
+}
+
+.about-item i {
+    font-size: 30px;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.about-item h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about-item hr {
+    width: 46px;
+    height: 3px;
+    background-color: #57aa31;
+    margin: 0 auto;
+    border: none;
+}
+
+.about-item p {
+    margin-top: 20px;
+}
+
+.about-item:hover {
+    background-color: rgb(158, 216, 72);
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+    color: #fff;
+}
+
+.about-item:hover hr {
+    background-color: #fff;
+}
+
+.about-item:hover i {
+    transform: rotateY(-20px);
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr {
+    transition: all 400ms ease-in-out;
+}
+
+footer {
+    background: #d6e9aa;
+    padding: 15px;
+}
+
+footer p {
+    color: rgb(63, 62, 62);
+}
+
+p {
+    font-family: 'Amatic SC', cursive;
+}
+
+h3 {
+    font-family: 'Amatic SC', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .team {
+        flex-direction: column;
+    }
+
+    .team_member {
+        width: fit-content;
+    }
+}
