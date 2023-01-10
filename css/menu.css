@@ -50,6 +50,85 @@
    width: 78px;
    height: 78px;
 }
+
+/*  -------menu drink ---------*/
+.list{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+
+}
+.item .img img{
+   height: 310px;
+   width: 282px;
+   overflow: hidden;
+   transition: all 0.3s;
+}
+.item .img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.item{
+   padding: 9px 9px 50px 9px;
+   transition: .5s;
+}
+.fisrt-child{
+   border-right: none;
+   border-bottom: none;
+}
+.item:hover {
+   background-color: rgba(240, 243, 247, 0.404);
+   transition: .3s;
+   z-index: 11;
+}
+.item .name-drink h3{
+   text-align: center;
+   font-size: 25px;
+}
+
+
+/* product details */
+.modal-dialog{
+   max-width: 1000px;
+}
+.size{
+   padding: 3px 9px;
+   margin: 5px;
+   border: none;
+   color: #41424A;
+   box-shadow: 26px 31px 85px -41px rgba(214,191,191,1);
+-webkit-box-shadow: 26px 31px 85px -41px rgba(214,191,191,1);
+-moz-box-shadow: 26px 31px 85px -41px rgba(214,191,191,1);
+}
+.size:focus{
+   background-color: #000;
+   color: #ffff;
+   transition:  .5s ease-in;
+}
+
+.btn-danger{
+   background-color: white;
+   color: #000;
+   border:1px solid #000;
+   border-radius: 0;
+}
+.cart{
+   width: 90%;
+   display: block;
+   margin-top: 10px;
+   padding: 10px 20px;
+   font-family: 'Amatic SC', cursive;
+   font-size: 19px;
+   letter-spacing: 3px;
+   background-color: #ffff;
+}
+.cart:hover{
+   background-color: #000;
+   color: #ffff;
+   transition: .4s ease-in-out;
+}
+
+/* reponsive mobile */
 @media only screen and (max-width: 768px) {
    .select-menu-showmb{
        display: block;
@@ -65,7 +144,23 @@
       width: 100%;
       height: 100%;
    }
+   .list{
+      display: grid;
+      grid-template-columns: auto;
+   
+   }
+   .item .img img{
+      height: 220px;
+      width: 200px;
+      overflow: hidden;
+      transition: all 0.3s;
+   }
+   .item{
+      margin-top: 50px;
+   }
+
 }
+/* reponsive taplet */
 @media only screen and (min-width:768px) and (max-width: 1199px) {
    .title::after,.title::before{
        display: none;
@@ -74,5 +169,10 @@
       object-fit: cover;
       width: 100%;
       height: 100%;
+   }
+   .list{
+      display: grid;
+      grid-template-columns: auto auto ;
+   
    }
 }

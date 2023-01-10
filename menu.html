@@ -41,7 +41,7 @@
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search juice generation" aria-label="Search">
             <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <a href="/cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="shopping-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </form>
     </div>
   </nav>
@@ -75,10 +75,17 @@
       </div>
     </div>
   </nav>
+
+
 <!-- section-menu -->
+
+    <!-- baner -->
 <div class="container-fluid">
   <img class="baner" src="/img/baner-icon/banners-2540-Menu-2020-FreshJuice-10.jpg" alt="">
 </div>
+    <!-- end baner -->
+
+   
 <div class="container title-menu">
   <h1 class="title">select your menu</h1>
   <div class="container select-menu-showmb">
@@ -92,8 +99,8 @@
           <option value="">Mocks Tails</option>
       </select>
   </div>
-  <ul class="nav justify-content-center">
-      <li class="nav-item">
+  <ul class="nav justify-content-center listPage">
+      <li class="nav-item ">
         <a class="nav-link" href="#">
           <span class="img-oring"><img src="/img/baner-icon/fresh-juices.png" alt=""></span>
           <span class="text">Fresh Juices</span>
@@ -138,9 +145,143 @@
     </ul>
 </div>
 
-<!-- section -->
+<!-- end section -->
+ 
+<!--product list -->
+<div class="container">
+  <div class="list">
+    <!-- item1  -->
+    <div class="item first-child " type="button"  data-bs-toggle="modal" data-bs-target="#myModal">
+      <div class="img">
+        <img src="img/Fruit Juice/Apple.png" alt="">
+      </div>
+      <div class="name-drink">
+        <h3>Apple</h3>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Product Details</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="/img/Fruit Juice/Apple.png" alt="">
+              </div>
+              <div class="col-md-6">
+                <div class="container-fluid">
+                  <h2>Apple</h2>              
+                  <p>All hail! Kale, green apple, and a kiss of watermelon make this nutritional powerhouse a great way to go green.</p>
+                  <h3>$12</h3>
+                </div>
+                <div class="container-fluid">
+                  <button class="size">S</button>
+                  <button class="size">M</button>
+                  <button class="size">L</button>
+                </div>
+                <div class="quantity">
+                  <button>-</button>
+                  <input type="number">
+                  <button>+</button>
+                </div>
+                <p><i class="fa-solid fa-truck-fast"></i>Expect Delivery within VietNam <strong>2 hours</strong> after booking </p>
+                <button class="cart">Buy Now</button>
+                <button class="cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+    <!-- item 2 -->
+    <div class="item">
+      <div class="img">
+        <img src="img/Fruit Juice/CitrusSuperstar.png" alt="">
+      </div>
+      <div class="name-drink">
+        <h3>CitrusSuperstar</h3>
+      </div>
+    </div>
+    <!-- item 3 -->
+    <div class="item">
+      <div class="img">
+        <img src="img/Fruit Juice/GrapeFruit.png" alt="">
+      </div>
+      <div class="name-drink">
+        <h3>Grape Fruit</h3>
+      </div>
+    </div>
+    <!-- item 4 -->
+    <div class="item last-child">
+      <div class="img">
+        <img src="img/Fruit Juice/Orange.png" alt="">
+      </div>
+      <div class="name-drink">
+        <h3>Orange</h3>
+      </div>
+    </div>
+    <!--  item 5 -->
+    <div class="item first-child">
+      <div class="img">
+        <img src="img/Fruit Juice/Pineapple.png" alt="">
+      </div>
+      <div class="name-drink">
+        <h3>Pine Apple</h3>
+      </div>
+    </div>
+    <!-- item 6 -->
+    <div class="item">
+      <div class="img">
+        <img src="img/Fruit Juice/TheKiller.png" alt="">
+      </div>
+      <div class="name-drink">
+        <h3>The Killer</h3>
+      </div>
+    </div>
+    <!-- item 7 -->
+    <div class="item">
+      <div class="img">
+        <img src="img/Fruit Juice/Watermelon.png" alt="">
+      </div>
+      <div class="name-drink">
+        <h3>Water Melon</h3>
+      </div>
+    </div>
+    <!-- item 8 -->
+    <div class="item last-child">
+      <div class="img">
+        <img src="img/Fruit Juice/YoungThaiCoconut.jpg" alt="">
+      </div>
+      <div class="name-drink">
+        <h3>Young Thai Coconut</h3>
+      </div>
+    </div>
+    <!-- item 9 -->
+    <div class="item">
+      <div class="img">
+        <img src="img/Vegetable Juice/Carrot.png" alt="">
+      </div>
+      <div class="name-drink">
+        <h3>Carrot</h3>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- end product list -->
 
 
 
@@ -198,5 +339,6 @@
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
