@@ -1,0 +1,41 @@
+.baner-careting{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.part1 h3{
+    font-family: "Open Sans", sans-serif;
+}
+.row1{
+    width: 60%;
+    margin: 0 auto;
+}
+.row2{
+    width: 50%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+    .baner-careting{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .row1{
+        width:100%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 1199px) {
+    .baner-careting{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .row1{
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+    }    
+}
