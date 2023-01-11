@@ -76,14 +76,27 @@
    border-right: none;
    border-bottom: none;
 }
-.item:hover {
-   background-color: rgba(240, 243, 247, 0.404);
-   transition: .3s;
-   z-index: 11;
-}
+
 .item .name-drink h3{
    text-align: center;
    font-size: 25px;
+}
+.img {
+   height: 310px;
+   margin: 10px auto;
+   overflow: hidden;
+   position: relative;
+   width: 282px;
+}
+.img img {
+   max-width: 100%;
+   transition: all 1s;
+   -webkit-transform: scale(1);
+           transform: scale(1);
+}
+.img:hover img {
+   -webkit-transform: scale(1.1);
+           transform: scale(1.1);
 }
 
 
@@ -127,7 +140,21 @@
    color: #ffff;
    transition: .4s ease-in-out;
 }
-
+.add{
+   width: 90%;
+   display: block;
+   margin-top: 10px;
+   padding: 10px 20px;
+   font-family: 'Amatic SC', cursive;
+   font-size: 19px;
+   letter-spacing: 3px;
+   background-color: #ffff;
+}
+.add:hover{
+   background-color: #000;
+   color: #ffff;
+   transition: .4s ease-in-out;
+}
 /* reponsive mobile */
 @media only screen and (max-width: 768px) {
    .select-menu-showmb{
