@@ -8,13 +8,17 @@
     font-family: "Open Sans", sans-serif;
 }
 .row1{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 .row2{
     width: 50%;
     margin: 0 auto;
+    
 }
+
+
+
 @media screen and (max-width: 768px){
     .baner-careting{
         object-fit: cover;
