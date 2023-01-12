@@ -1,11 +1,12 @@
  * {
-     font-family: 'Amatic SC', cursive;
+
      box-sizing: border-box;
  }
 
 
  a {
      text-decoration: none;
+
  }
 
  #testimonials {
@@ -14,7 +15,7 @@
      align-items: center;
      flex-direction: column;
      width: 100%;
-     background-color: #d6e9aa;
+     background-color: #f0f0f0;
      padding: 40px;
  }
 
@@ -35,6 +36,7 @@
      background-color: #d6e9aa;
      color: #fff;
      padding: 10px 20px;
+
  }
 
  .testimonial-heading span {
@@ -43,6 +45,7 @@
      margin-bottom: 10px;
      letter-spacing: 2px;
      text-transform: uppercase;
+
  }
 
  .testimonial-box-container {
@@ -89,8 +92,9 @@
 
  .name-user strong {
      color: #0f0f0f;
-     font-size: 1.1rem;
+     font-size: 1.4rem;
      letter-spacing: 0.5px;
+     font-family: 'Amatic SC', cursive;
  }
 
  .name-user span {
@@ -110,8 +114,9 @@
  }
 
  .client-comment p {
-     font-size: 0.9rem;
+     font-size: 1rem;
      color: #0c0c0b;
+     font-family: 'Amatic SC', cursive;
  }
 
  .testimonial-box:hover {
@@ -119,18 +124,18 @@
      transition: all ease 0.3s;
  }
 
- body {
-     font-family: 'Lato', georgia;
-     font-size: 25px;
-     color: #000;
+ /* body {
+     font-family: 'Lato', georgia color: #000;
      text-align: center;
      font-weight: 300;
      -webkit-font-smoothing: antialiased;
- }
+ } */
 
  #contact-form {
      max-width: 90%;
      margin: 0 auto;
+     text-align: center;
+
  }
 
  label {
@@ -143,14 +148,11 @@
      border: none;
      outline: none;
      border-radius: 0;
-     text-align: center;
-     background: none;
-     font-weight: 700;
+
      font-family: 'Lato', georgia;
-     font-size: 25px;
+
      color: #000;
-     max-width: 90%;
-     padding: 1rem;
+
      border: 2px dashed rgba(0, 0, 0, 0);
      box-sizing: border-box;
      cursor: text;
@@ -158,7 +160,7 @@
 
  textarea {
      text-align: left;
-     /* overflow:hidden; */
+     overflow: hidden;
 
      resize: none;
      width: 90%;
@@ -209,7 +211,6 @@
  }
 
  :-moz-placeholder {
-     /* Firefox 18- */
 
      text-align: center;
      color: rgba(0, 0, 0, 0.4);
@@ -218,7 +219,7 @@
  }
 
  ::-moz-placeholder {
-     /* Firefox 19+ */
+
 
      text-align: center;
      color: rgba(0, 0, 0, 0.4);
@@ -277,11 +278,12 @@
      color: #000;
  }
 
- .customer {
+ .customers {
      margin-top: 50px;
      font-size: 40px;
      text-align: center;
      box-sizing: border-box;
+     margin-bottom: 50px;
 
  }
 
