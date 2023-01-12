@@ -4,9 +4,7 @@
     display: inline-block;
     vertical-align: middle;
 }
-.part1 h3{
-    font-family: "Open Sans", sans-serif;
-}
+
 .row1{
     width: 70%;
     margin: 0 auto;
@@ -23,12 +21,17 @@
     grid-gap: 30px;
     overflow-x: auto;
 }
-/* .part2::-webkit-scrollbar-thumb{
-    background-color: #red;
+::-webkit-scrollbar{
+    width: 0.1px;
+    border-radius: 5px;
 }
-.part2::-webkit-scrollbar-track{
-    background-color: aqua;
-} */
+::-webkit-scrollbar-thumb{
+    background-color: rgb(218, 217, 217);
+
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(252, 252, 252);
+}
 .img-item{
     border-radius: 10px;
     height: 300px;
