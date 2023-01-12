@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    
     $(".qtyminus").on("click",function(){
         var now = $(".qty").val();
         if ($.isNumeric(now)){
@@ -7,7 +6,7 @@ $(document).ready(function() {
             { now--;}
             $(".qty").val(now);
         }
-    })            
+    })
     $(".qtyplus").on("click",function(){
         var now = $(".qty").val();
         if ($.isNumeric(now)){
