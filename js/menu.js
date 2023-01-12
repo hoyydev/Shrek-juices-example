@@ -1,8 +1,17 @@
-let list = document.querySelectorAll('.list .item');
-list.forEach(item => {
-    item.addEventListener('click', function(even){
-        if(even.target.classList.contains('add')){
-            alert('111')
+$(document).ready(function() {
+    
+    $(".qtyminus").on("click",function(){
+        var now = $(".qty").val();
+        if ($.isNumeric(now)){
+            if (parseInt(now) -1> 0)
+            { now--;}
+            $(".qty").val(now);
         }
-    })
-})
+    })            
+    $(".qtyplus").on("click",function(){
+        var now = $(".qty").val();
+        if ($.isNumeric(now)){
+            $(".qty").val(parseInt(now)+1);
+        }
+    });
+});

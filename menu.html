@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/style.css">  <!--link này dùng cho trang index.html-->
     <link rel="stylesheet" href="css/head-footer.css"> <!--link này dùng chung cho header , footer-->
     <link rel="stylesheet" href="css/menu.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     <title>Shakes Juice</title>
 </head>
@@ -163,40 +165,70 @@
     <div class="modal fade" id="myModal1">
       <div class="modal-dialog">
         <div class="modal-content">
-         
           <div class="modal-header">
             <h4 class="modal-title">Product Details</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           
           <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="/img/Fruit Juice/Apple.png" alt="">
+            <div class="pd-wrap">
+              <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div id="slider" class="owl-carousel product-slider">
+                          <div class="item">
+                            <img src="img/Fruit Juice/Apple.png" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="product-dtl">
+                          <div class="product-info">
+                            <div class="product-name">Apple</div>
+                            <div class="reviews-counter">
+                              <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" checked />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" checked />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" checked />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                              </div>
+                              <span>3 Reviews</span>
+                            </div>
+                            <div class="product-price-discount"><span>$39.00</span><span class="line-through">$29.00</span></div>
+                          </div>
+                          <p>All hail! Kale, green apple, and a kiss of watermelon make this nutritional powerhouse a great way to go green.</p>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <label for="size">Size</label>
+                              <select id="size" name="size" class="form-control">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="product-count">
+                            <label for="size">Quantity</label>
+                            <form action="#" class="display-flex">
+                            <div class="qtyminus">-</div>
+                            <input type="text" name="quantity" value="1" class="qty">
+                            <div class="qtyplus">+</div>
+                        </form>
+                        <a href="#" class="round-black-btn">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6">
-                <div class="container-fluid">
-                  <h2>Apple</h2>              
-                  <p>All hail! Kale, green apple, and a kiss of watermelon make this nutritional powerhouse a great way to go green.</p>
-                  <h3>$12</h3>
-                </div>
-                <div class="container-fluid">
-                  <button class="size">S</button>
-                  <button class="size">M</button>
-                  <button class="size">L</button>
-                </div>
-                <div class="quantity">
-                  <button>-</button>
-                  <input type="number">
-                  <button>+</button>
-                </div>
-                <p><i class="fa-solid fa-truck-fast"></i>Expect Delivery within VietNam <strong>2 hours</strong> after booking </p>
-                <button class="cart">Buy Now</button>
-                <button class="add">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          
+              
           <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
           </div>
@@ -225,31 +257,62 @@
           </div>
           <!-- Modal body -->
           <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="/img/Fruit Juice/CitrusSuperstar.png" alt="">
-              </div>
-              <div class="col-md-6">
-                <div class="container-fluid">
-                  <h2>CitrusSuperstar</h2>              
-                  <p>All hail! Kale, green apple, and a kiss of watermelon make this nutritional powerhouse a great way to go green.</p>
-                  <h3>$19</h3>
+            <div class="pd-wrap">
+              <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div id="slider" class="owl-carousel product-slider">
+                          <div class="item">
+                            <img src="img/Fruit Juice/CitrusSuperstar.png" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="product-dtl">
+                          <div class="product-info">
+                            <div class="product-name">Citrus Superstar</div>
+                            <div class="reviews-counter">
+                              <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" checked />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" checked />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" checked />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                              </div>
+                              <span>3 Reviews</span>
+                            </div>
+                            <div class="product-price-discount"><span>$39.00</span><span class="line-through">$29.00</span></div>
+                          </div>
+                          <p>All hail! Kale, green apple, and a kiss of watermelon make this nutritional powerhouse a great way to go green.</p>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <label for="size">Size</label>
+                              <select id="size" name="size" class="form-control">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="product-count">
+                            <label for="size">Quantity</label>
+                            <form action="#" class="display-flex">
+                            <div class="qtyminus">-</div>
+                            <input type="text" name="quantity" value="1" class="qty">
+                            <div class="qtyplus">+</div>
+                        </form>
+                        <a href="#" class="round-black-btn">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="container-fluid">
-                  <button class="size">S</button>
-                  <button class="size">M</button>
-                  <button class="size">L</button>
-                </div>
-                <div class="quantity">
-                  <button>-</button>
-                  <input type="number">
-                  <button>+</button>
-                </div>
-                <p><i class="fa-solid fa-truck-fast"></i>Expect Delivery within VietNam <strong>2 hours</strong> after booking </p>
-                <button class="cart">Buy Now</button>
-                <button class="add">Add to cart</button>
-              </div>
-            </div>
           </div>
           <!-- Modal footer -->
           <div class="modal-footer">
@@ -279,32 +342,63 @@
           </div>
           
           <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="/img/Fruit Juice/GrapeFruit.png" alt="">
-              </div>
-              <div class="col-md-6">
-                <div class="container-fluid">
-                  <h2>GrapeFruit</h2>              
-                  <p>All hail! Kale, green apple, and a kiss of watermelon make this nutritional powerhouse a great way to go green.</p>
-                  <h3>$15</h3>
+            <div class="pd-wrap">
+              <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div id="slider" class="owl-carousel product-slider">
+                          <div class="item">
+                            <img src="img/Fruit Juice/GrapeFruit.png" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="product-dtl">
+                          <div class="product-info">
+                            <div class="product-name">Grape Fruit</div>
+                            <div class="reviews-counter">
+                              <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" checked />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" checked />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" checked />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                              </div>
+                              <span>3 Reviews</span>
+                            </div>
+                            <div class="product-price-discount"><span>$39.00</span><span class="line-through">$29.00</span></div>
+                          </div>
+                          <p>All hail! Kale, green apple, and a kiss of watermelon make this nutritional powerhouse a great way to go green.</p>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <label for="size">Size</label>
+                              <select id="size" name="size" class="form-control">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="product-count">
+                            <label for="size">Quantity</label>
+                            <form action="#" class="display-flex">
+                            <div class="qtyminus">-</div>
+                            <input type="text" name="quantity" value="1" class="qty">
+                            <div class="qtyplus">+</div>
+                        </form>
+                        <a href="#" class="round-black-btn">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="container-fluid">
-                  <button class="size">S</button>
-                  <button class="size">M</button>
-                  <button class="size">L</button>
-                </div>
-                <div class="quantity">
-                  <button>-</button>
-                  <input type="number">
-                  <button>+</button>
-                </div>
-                <p><i class="fa-solid fa-truck-fast"></i>Expect Delivery within VietNam <strong>2 hours</strong> after booking </p>
-                <button class="cart">Buy Now</button>
-                <button class="add">Add to cart</button>
-              </div>
             </div>
-          </div>
           
           <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
@@ -312,8 +406,9 @@
         </div>
       </div>
     </div> 
+
     <!-- item 4 -->
-    <div class="item last-child">
+    <div class="item" type="button"  data-bs-toggle="modal" data-bs-target="#myModal4">
       <div class="img">
         <img src="img/Fruit Juice/Orange.png" alt="">
       </div>
@@ -321,6 +416,81 @@
         <h3>Orange</h3>
       </div>
     </div>
+    <div class="modal fade" id="myModal4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+         
+          <div class="modal-header">
+            <h4 class="modal-title">Product Details</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          
+          <div class="modal-body">
+            <div class="pd-wrap">
+              <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div id="slider" class="owl-carousel product-slider">
+                          <div class="item">
+                            <img src="img/Fruit Juice/Orange.png" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="product-dtl">
+                          <div class="product-info">
+                            <div class="product-name">Orange</div>
+                            <div class="reviews-counter">
+                              <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" checked />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" checked />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" checked />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                              </div>
+                              <span>3 Reviews</span>
+                            </div>
+                            <div class="product-price-discount"><span>$39.00</span><span class="line-through">$29.00</span></div>
+                          </div>
+                          <p>All hail! Kale, green apple, and a kiss of watermelon make this nutritional powerhouse a great way to go green.</p>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <label for="size">Size</label>
+                              <select id="size" name="size" class="form-control">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="product-count">
+                            <label for="size">Quantity</label>
+                            <form action="#" class="display-flex">
+                            <div class="qtyminus">-</div>
+                            <input type="text" name="quantity" value="1" class="qty">
+                            <div class="qtyplus">+</div>
+                        </form>
+                        <a href="#" class="round-black-btn">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
     <!--  item 5 -->
     <div class="item first-child">
       <div class="img">
@@ -330,6 +500,8 @@
         <h3>Pine Apple</h3>
       </div>
     </div>
+
+
     <!-- item 6 -->
     <div class="item">
       <div class="img">
@@ -339,6 +511,8 @@
         <h3>The Killer</h3>
       </div>
     </div>
+
+
     <!-- item 7 -->
     <div class="item">
       <div class="img">
@@ -348,6 +522,8 @@
         <h3>Water Melon</h3>
       </div>
     </div>
+
+
     <!-- item 8 -->
     <div class="item last-child">
       <div class="img">
@@ -357,6 +533,8 @@
         <h3>Young Thai Coconut</h3>
       </div>
     </div>
+
+    
     <!-- item 9 -->
     <div class="item">
       <div class="img">
