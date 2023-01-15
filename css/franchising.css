@@ -1,0 +1,283 @@
+#slider {
+    margin-top: 100px;
+    display: flex;
+}
+
+.total {
+    padding-left: 210px;
+    flex: 2;
+    text-align: justify;
+}
+
+.layout-sub {
+    padding: 0 80px;
+    flex: 1;
+}
+
+/* CSS BỐ CỤ BÀI */
+.items-slider {
+    display: flex;
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+
+.ti-home {
+    font-size: 25px;
+    color: #009cd7;
+}
+
+.ti-angle-right {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.slider-ce {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.shadow {
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    padding: 25px;
+}
+
+.sline {
+    letter-spacing: -0.5px;
+    font-size: 30px;
+}
+
+.contact {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #edebe3;
+    padding: 7px;
+}
+
+.hotline {
+    display: inline-block;
+}
+
+.icon-meta {
+    display: inline-block;
+}
+
+.calen {
+    display: inline-flex;
+}
+
+.nav-hotline {
+    background: #c6f054;
+    padding: 3px 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 5px;
+}
+
+.ti-email,
+.ti-instagram,
+.ti-facebook {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.calen {
+    margin-left: 70px;
+    opacity: 0.6;
+}
+
+.nav-calne {
+    margin-right: 10px;
+    opacity: 0.6;
+}
+
+.box {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.nav-list {
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.nav-content {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.heading {
+    padding-bottom: 18px;
+    font-size: 17px;
+}
+
+.add {
+    text-align: center;
+}
+
+.nav-img {
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.sub-img {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.more {
+    background: #edebe3;
+    padding: 10px;
+}
+
+.more h3 {
+    font-family: 'themify';
+}
+
+#clude {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#clude li {
+    margin-bottom: 5px;
+}
+
+.nav-clude {
+    text-decoration: none;
+    color: #00739f;
+    font-size: 15px;
+}
+
+#clude .nav-clude:hover::after {
+    transform: scale(1);
+}
+
+#clude .nav-clude::after {
+    content: " ";
+    display: block;
+    height: 1px;
+    background-color: #00739f;
+    margin-top: -3px;
+    transform: scale(0);
+    transition: all 0.5s;
+    margin-right: 1px;
+}
+
+.ti-user {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.box-content {
+    display: inline-block;
+}
+
+.box-content input {
+    padding: 20px;
+    width: 274%;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+.submit {
+    padding-top: 10px;
+    padding-right: 34px;
+}
+
+.btn-submit {
+    color: #fff;
+    background-color: #1069b3;
+    font-size: 13px;
+    padding: 7px 22px;
+    border-radius: 4px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+.tony {
+    font-size: 25px;
+    color: #004370;
+    padding-top: 50px;
+}
+
+.nav-listing {
+    margin-top: 30px;
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.listing-content {
+    margin-left: 24px;
+}
+
+.two-content {
+    font-family: 'themify';
+}
+
+/* CỘT TRÁI */
+.done {
+    text-decoration: none;
+    background-color: #c6f054;
+    color: #fff;
+    padding: 2px 22px;
+    border-radius: 4px;
+}
+
+#list-new {
+    margin-top: 22px;
+}
+
+#list-new li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#list-new li:hover a {
+    background-color: #fff;
+    color: red;
+}
+
+.nav-new {
+    margin-bottom: 10px;
+}
+
+.adv {
+    margin-top: 100px;
+}
+
+.adv-img {
+    margin-bottom: 20px;
+}
+
+/* #content {
+    
+} */
+
+#footer {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    padding: 0 200px;
+}
+
+.right a {
+    width: 75%;
+    font-size: 14px;
+}
+
+.left {
+    font-size: 14px;
+    margin-top: 20px;
+}
