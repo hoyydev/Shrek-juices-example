@@ -1,5 +1,5 @@
 
-.about-1 {
+/* .about-1 {
     margin: 30px;
     padding: 5px;
     font-family: 'Amatic SC', cursive;
@@ -102,5 +102,24 @@ h3 {
 
     .team_member {
         width: fit-content;
+    }
+} */
+.about1{
+    text-align: center;
+    margin: 0 auto;
+}
+.about-item{
+    margin: 0 auto;
+    border: 2px solid black;
+    padding-top: 15px;
+    width: 85%;
+    border-radius: 25px;
+}
+@media only screen and (min-width:768px) and (max-width: 1199px) {
+    .about-rps{
+        flex-direction: row !important;
+    }  
+    .about-item{
+        width: 100%;
     }
 }
