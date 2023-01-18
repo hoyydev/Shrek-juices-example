@@ -1,4 +1,23 @@
 /* section menu */
+.d-flex .qtycart{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(87, 156, 8, 0.938);
+   border-radius:7px;
+   width: 15px;
+   height: 17px;
+   text-decoration: none;
+   color: #ffff;
+   position: absolute;
+   right: 0;
+   top: 0;
+   transform: translate(50%,50%);
+
+}
+.ping{
+   position: relative;
+}
 .baner{
    object-fit: cover;
    width: 100%;
@@ -37,6 +56,7 @@
    align-items: center;
 
 }
+
 .text{
    color: #000;
    font-family: 'Amatic SC', cursive;

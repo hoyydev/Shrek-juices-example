@@ -27,7 +27,7 @@
 
     <title>Shrek Juice</title>
 </head>
-<body onload="showcart()">
+<body >
     <!-- navbar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary navone">
     <div class="container-fluid">
@@ -45,7 +45,7 @@
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" id="fillter" placeholder="Search juice generation" aria-label="Search">
             <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <a href="shopping-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="shopping-cart.html" class="ping"><i class="fa-solid fa-cart-shopping"></i><span class="qtycart">0</span></a>
         </form>
     </div>
   </nav>
@@ -86,11 +86,6 @@
     <h1 class="title2">Shopping cart is empty</h1>
 </div>
 <!-- end section -->
-<!-- title when no item -->
-<!-- <div class="container no-item">
-    <h1>YOU HAVE NO ITEMS IN YOUR SHOPPING CART</h1>
-    <p>Click <a href="menu.html">here</a> to continue shopping</p>
-</div> -->
 
 <!-- <table>
   <thead>
@@ -102,7 +97,7 @@
       <th>Remove</th>
     </tr>
   </thead>
-
+  
   <tbody id="show-menu-cart" class="align-middle">
     <tr>
       <td class="align-middle"><img src="img/Fruit Juice/Apple.png" alt=""></td>
@@ -127,6 +122,42 @@
     </tr>
   </tbody>
 </table> -->
+
+<!-- title when no item -->
+<div class="container no-item">
+    <h1>YOU HAVE NO ITEMS IN YOUR SHOPPING CART</h1>
+    <p>Click <a href="menu.html">here</a> to continue shopping</p>
+</div>
+<div class="row  d-flex justify-content-center justify-content-md-end product-container mt-5 ">
+  <div class="col-md-10 p-3 pb-4 rounded-lg bg-white ml-md-0" id="cart" style="z-index: 1; ">
+    <div class="d-flex">
+      <div class="col-md-3"> 
+        <h5>Product</h5>
+      </div>
+      <div class="col-md-3 d-flex flex-wrap align-content-center ">
+        <h5>Title</h5>
+      </div>
+      <div class="col-md-3 d-flex flex-wrap align-content-center ">
+        <h5>Qty</h5>
+      </div>
+      <div class="col-md-2 d-flex flex-wrap align-content-center ">
+        <h5>Price</h5>
+      </div>
+      <div class="col-md-1">
+
+      </div>
+    </div>
+    <div id="order" >
+
+    </div>
+    
+    <div id="cart_footer">
+      <div id="order_btn" class="text-center text-white w-50 bg-dark p-2 font-weight-bold m-auto mt-5" style="letter-spacing:1.2px; font-size: 20px;">
+        Payment
+      </div>
+    </div>
+  </div>
+ </div>
 
 <!-- 
 <div class="container addcart">
