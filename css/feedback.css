@@ -292,7 +292,7 @@
 
  @media(max-width:1060px) {
      .testimonial-box {
-         width: 45px;
+         /* width: 45px; */
          padding: 10px;
      }
  }

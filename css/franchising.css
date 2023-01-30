@@ -1,15 +1,19 @@
 #slider {
     margin-top: 100px;
     display: flex;
+    column-count: 3;
+    flex-wrap: wrap;
 }
 
 .total {
-    padding-left: 210px;
+    padding-left: 100px;
+    width: 65%;
     flex: 2;
     text-align: justify;
 }
 
 .layout-sub {
+    
     padding: 0 80px;
     flex: 1;
 }
@@ -175,12 +179,12 @@
 }
 
 .box-content {
-    display: inline-block;
+    display: block;
 }
 
 .box-content input {
     padding: 20px;
-    width: 274%;
+    width: 100%;
     display: inline-block;
     border-radius: 4px;
     border: 1px solid #ccc;
@@ -280,4 +284,36 @@
 .left {
     font-size: 14px;
     margin-top: 20px;
+}
+
+/* mobile */
+@media only screen and (max-width : 768px) {
+    .total {
+        padding-left: 0px;
+    }
+
+    .nav-listing {
+        display: flex;
+        flex-direction: column;
+    }
+    .layout-sub {
+        margin-top: 20px ;
+        padding: 0;
+        flex: 1;
+    }
+    .adv{
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width : 768px) and (max-width : 979px) {
+    .total {
+        padding-left: 30px;
+    }
+    .layout-sub {
+        margin-top: 50px ;
+    
+    }
 }
