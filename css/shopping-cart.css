@@ -50,6 +50,9 @@
     border-top: 1px solid #333;
     
 }
+#order_btn{
+    cursor: pointer;
+}
 
  /* reponsive mobile */
 @media only screen and (max-width: 768px) {

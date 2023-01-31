@@ -54,6 +54,7 @@ let products = [
         tag : 'YoungThaiCoconut',
         inCart : 0,
     }
+    
 ]
 
 for(let i = 0; i < carts.length; i++){
@@ -160,8 +161,8 @@ function displayCart(){
         });
 
         productContainer.innerHTML +=`
-        <div class="total d-flex justify-content-md-end mt-3">
-             <div class="col-md-9"><h3>Total : </h3></div>
+        <div class="total d-flex justify-content-md-end mt-5">
+             <div class="col-md-10"><h3>Total : </h3></div>
              <div class="col-md-2"><h3>$${cartCost}.00 </h3></div>
          </div>
         `
