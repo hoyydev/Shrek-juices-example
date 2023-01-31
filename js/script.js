@@ -54,6 +54,7 @@ let products = [
         tag : 'YoungThaiCoconut',
         inCart : 0,
     }
+
     
 ]
 
@@ -169,5 +170,25 @@ function displayCart(){
     }
 }
 
+
 onLoadNumber();
 displayCart();
+
+// remove cartItems
+let remove_cart = document.getElementsByClassName("close");
+for (let i = 0; i < remove_cart.length; i++) {
+  let button = remove_cart[i]
+  button.addEventListener("click", function () {
+    let button_remove = event.target
+    button_remove.parentElement.parentElement.remove()
+  })
+  
+}
+
+//  update cartItems
+
+function updateCart(){
+    let cart_item = document.getElementById("#order");
+    let cart_row = document.getElementsByClassName("main");
+     
+}
