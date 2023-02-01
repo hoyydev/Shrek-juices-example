@@ -286,6 +286,30 @@
     margin-top: 20px;
 }
 
+
+/* comment */
+.comentBox {
+    padding: 1px;
+    width: 96%;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.leftPaneImg {
+    width: 10%;
+    float: left;
+}
+.leftPaneImg img {
+    border-radius: 100%;
+}
+.rightPanel {
+    width: 85%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+
 /* mobile */
 @media only screen and (max-width : 768px) {
     .total {
