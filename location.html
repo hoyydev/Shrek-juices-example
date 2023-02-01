@@ -26,7 +26,6 @@
   <!--link này dùng chung cho header , footer-->
   <link rel="stylesheet" href="css/menu.css"> <!-- link này dùng cho trang menu.html-->
   <link rel="stylesheet" href="css/location.css"> <!-- link này dùng cho trang location.html-->
-
   <title>Shrek Juice</title>
 </head>
 
@@ -119,19 +118,22 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-6">
-          <div class="contact__form">
-            <form action="#">
+          <div class="contact__form ">
+            <form action="#" method="post"  name="myForm" id="form-1" >
               <div class="row">
-                <div class="col-lg-6">
-                  <input type="text" placeholder="Name" class="place">
+                <div class="col-lg-6 form-group">
+                  <input type="text" placeholder="Name" class="place" name="Name" id="Name" >
+                  <span class="form-message"></span>
                 </div>
-                <div class="col-lg-6">
-                  <input type="text" placeholder="Email" class="place">
+                <div class="col-lg-6 form-group">
+                  <input type="text" placeholder="Email" class="place" name="Email" id="Email" >
+                  <span class="form-message"></span>
                 </div>
-                <div class="col-lg-12">
-                  <textarea placeholder="Message"></textarea>
-                  <button type="submit" class="site-btn send">Send Message</button>
+                <div class="col-lg-12 form-group">
+                  <textarea placeholder="Message" type="text" name="Message" ></textarea>
+                  <span class="form-message"></span>
                 </div>
+                <button type="submit" class="site-btn send form-submit">Send Message</button>
               </div>
             </form>
           </div>
@@ -198,6 +200,18 @@
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/location.js"></script>
+  <script>
+
+    validator({
+      form: '#form-1',
+      errorSelector: '.form-message',
+      rules: [
+        validator.isRequired('#Name'),
+        validator.isEmail('#Email'),
+      ]
+    });
+  </script>
 </body>
 
 </html>
