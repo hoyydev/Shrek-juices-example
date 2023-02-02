@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="webside icon" type="png" href="/img/baner-icon/07D132B4-BB34-4BD8-8F26-5EC38035539E.png" >
+    <link rel="webside icon" type="png" href="/img/baner-icon/07D132B4-BB34-4BD8-8F26-5EC38035539E.png">
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,49 +89,85 @@
 
 
     <!-- section-menu -->
-    <section id="contact">
-        <!-- Left contact page -->
+    
+    <div class="containers">
+      
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            dolorum adipisci recusandae praesentium dicta!
+          </p>
 
-        <div class="direct-contact-container">
+          <div class="info">
+            <div class="information">
+             
+              <p>Address: S8 Ton That Thuyet , My Dinh , Ha Noi</p>
+            </div>
+            <div class="information">
+              
+              <p>Gmail: Shrekjuice@ipsum.com</p>
+            </div>
+            <div class="information">
+              
+              <p>Hotline: (+84) 456 9999</p>
+            </div>
+          </div>
 
-            <ul class="contact-list">
-                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Ton That
-                            Thuyet</span></i></li>
-                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
-                                href="tel:1-212-555-5555" title="Give me a call">(+84) 567 99999</a></span></i></li>
-
-                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
-                                href="mailto:#" title="Send me an email">juice@gmail.com</a></span></i></li>
-
-            </ul>
-
-            <hr>
-            <ul class="social-media-list">
-                <li><a href="#" target="_blank" class="contact-icon">
-                        <i class="fab fa-github" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                        <i class="fab fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                        <i class="fab fa-youtube" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                        <i class="fab fa-instagram " aria-hidden="true"></i></a>
-                </li>
-            </ul>
-            <hr>
-
-            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div><br>
+            <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="https://www.learningrobo.com/">Learning Robo</a></div>
+          </div>
         </div>
 
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
         </div>
+      </div>
+    </div>
 
-    </section>
-
-
-
+    <script src="script.js"></script>
 
     <!-- footer -->
     <div class="container-fluid footer">
@@ -188,6 +224,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
