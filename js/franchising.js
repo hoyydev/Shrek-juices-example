@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     var coment = [
         {
-            "name": "tanuj Gupta", "Date": "10 Apr, 2023", "body": "this is a coment 1"
+            "name": "Jonhny Dang", "Date": "10 Apr, 2023", "body": "A beutyfull"
         }
         ];
 
