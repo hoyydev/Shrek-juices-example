@@ -3,6 +3,7 @@ function validator(options){
     function validate(inputElement, rule) {
         var errorElement = inputElement.parentElement.querySelector(options.errorSelector);
         var errorMessage = rule.test(inputElement.value); 
+        
 
                    if(errorMessage){
                         errorElement.innerText = errorMessage;  
@@ -39,7 +40,7 @@ validator.isRequired = function(selector){
     return {
         selector: selector,
         test: function (value){
-            return value.trim() ? undefined : 'xam lol nhap vao'
+            return value.trim() ? undefined : 'Please enter your name'
         }
     };
 }
@@ -49,7 +50,7 @@ validator.isEmail = function(selector){
         selector: selector,
         test: function (value){
             var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
-            return regex.test(value) ? undefined : 'vui long nhap email';
+            return regex.test(value) ? undefined : 'Please enter your email';
         }
     };
 }

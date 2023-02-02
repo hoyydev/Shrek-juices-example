@@ -149,7 +149,13 @@ function displayCart(){
                  <h6 style="font-size:25px;">${item.name}</h6>
              </div>
              <div class=" col-md-3 d-flex flex-wrap align-content-center">
-                 <h4 class="mx-2"> ${item.inCart} </h4>
+            <div class="product-count">
+                <form action="#" class="display-flex">
+                    <div class="qtyminus">-</div>
+                    <input type="text" name="quantity" value="${item.inCart}" class="qty">
+                    <div class="qtyplus">+</div>
+                </form>
+            </div>
              </div>
              <div class="col-md-2 d-flex flex-wrap align-content-center" id="t_price"> 
                  <h4 class=" mt-2 d-flex"><span class="cart_item_price">$${item.price}.00</span></h4>

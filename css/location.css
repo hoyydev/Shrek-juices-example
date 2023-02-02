@@ -41,7 +41,8 @@ ul li p{
     padding-left: 20px;
     font-size: 15px;
     color: #b7b7b7;
-    margin-bottom: 30px;
+    margin-bottom: 6px;
+    outline: none;
 }
 textarea {
     height: 150px;
@@ -63,6 +64,9 @@ textarea {
     background-color: #000;
     color: #fff;
 }
+
 .invalid{
+    margin-bottom: 20px;
     color: red;
+    font-size: 16px;
 }

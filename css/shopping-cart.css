@@ -55,6 +55,31 @@
     background-color: #689F38;
 }
 
+.info{
+    border: 1px solid #b3b3b3 !important;
+    border-radius: 5px !important;
+    
+    
+}
+.form-floating label {
+    color: #b3b3b3;
+}
+
+.info-check{
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    padding: 20px 5px;
+}
+
+.form-check .form-check-input {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+}
+.form-check-input:checked {
+    background-color: black;
+    border-color: black;
+}
  /* reponsive mobile */
 @media only screen and (max-width: 768px) {
     .baner{

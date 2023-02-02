@@ -39,7 +39,7 @@
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
-    padding: 2px !important;
+    
  }
  ::-webkit-input-placeholder{
     font-family: 'Amatic SC', cursive;
