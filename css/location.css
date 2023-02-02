@@ -70,3 +70,6 @@ textarea {
     color: red;
     font-size: 16px;
 }
+.form-group.invalid .place{
+    border-color: #f33a58;
+}
