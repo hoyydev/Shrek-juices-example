@@ -166,6 +166,10 @@ function displayCart(){
              <div class="col-md-10"><h3>Total : </h3></div>
              <div class="col-md-2"><h3>$${cartCost}.00 </h3></div>
          </div>
+         <div class="discount d-flex justify-content-md-end mt-5">
+            <div class="col-md-10"><h3>Discount Code :</h3></div>
+            <div class="col-md-2"></div>
+         </div>
         `
     }
 }
@@ -174,7 +178,7 @@ function displayCart(){
 onLoadNumber();
 displayCart();
 
-// remove cartItems
+// remove cartItems 
 let remove_cart = document.getElementsByClassName("close");
 for (let i = 0; i < remove_cart.length; i++) {
   let button = remove_cart[i]
@@ -190,5 +194,5 @@ for (let i = 0; i < remove_cart.length; i++) {
 function updateCart(){
     let cart_item = document.getElementById("#order");
     let cart_row = document.getElementsByClassName("main");
-     
+    
 }
