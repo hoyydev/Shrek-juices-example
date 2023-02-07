@@ -1,0 +1,338 @@
+iframe[name=page] {
+    width: 100%;
+    min-height: 2000px;
+  }
+  iframe[name=page] .about {
+    width: 100%;
+    min-height: 2000px;
+  }
+  :root {
+      --white: #fff;
+      --orange: #f72;
+      --black: #000;
+  }
+  html {
+      font-family: sans-serif;
+  }
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box
+      }
+  /* ========= Space-beetween ======= */
+  .between {
+      justify-content: space-between;
+  }
+  /* ========= Display ======= */
+  .flex {
+      display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .grid-columns { 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  /* ========= Center ======= */
+  .center {
+      display: flex;
+      justify-content: center;
+  }
+  /* ========= Padding ======= */
+  .px-5 {
+      padding: 0 20px;
+  }
+  .px-4 {
+      padding: 0 15px;
+  }
+  .px-2 {
+      padding: 0 8px;
+  }
+  .px-l40 {
+      padding-left: 155px;
+  }
+  .pt-8 {
+      padding-top: 30px;
+  }
+  .px {
+      padding: 35px 200px;
+  }
+  .px-t4 {
+    padding: 15px 0;
+  }
+  .px-1 {
+    padding: 5px;
+  }
+  .px-t5 {
+    padding-top: 20px;
+    padding-bottom: 5px
+  }
+  .px-t {
+    padding-top: 70px;
+  }
+  .py {
+    padding: 30px 0;
+  }
+  .py-2 {
+    padding: 8px 0;
+  }
+  .py-t {
+    padding: 50px 0 15px 0;
+  }
+  .mr-b5 {
+    margin-bottom: -18px
+  }
+  .mr-t {
+    margin-top: 85px;
+  }
+  .slide {
+    margin-top: 85px;
+  }
+  .mr-r {
+    margin-right: 33%;
+  }
+  .mr-r1 {
+    margin-right: 32%;
+  }
+  .mr-r2 {
+    margin-right: 30%;
+  }
+  /* ========= Color ======= */
+  .color {
+      color: var(--black);
+  }
+  .c-orange {
+    color: var(--orange);
+  }
+  .c-gray {
+    color: #484848;
+  }
+  .m {
+    color: #000;
+  }
+  /* ========= Font-weight ======= */
+  .font-weight {
+      font-weight: 600;
+  }
+  .fw-4 {
+      font-weight: 400;
+  }
+  /* ========= Font-size ======= */
+  .size {
+    font-size: 35px;
+  }
+  .size-3 {
+    font-size: 14px;
+  }
+  .size-4 {
+    font-size: 15px;
+  }
+  .size-6 {
+    font-size: 24px;
+  }
+  .size-5 {
+    font-size: 20px;
+  }
+  .size-5 {
+    font-size: 18px;
+  }
+  .size-9 {
+    font-size: 30px;
+  }
+  .size-10 {
+    font-size: 42px;
+  }
+  /* ========= line-height ======= */
+  .line {
+    line-height: 31px;
+  }
+  .line-5 {
+    line-height: 22px;
+  }
+  .line-2 {
+    line-height: 10px;
+  }
+  
+  /* ========= width ======= */
+  .width {
+    width: 40%;
+  }
+  .max-w-full {
+    max-width: 100%;
+  }
+  .width-2 {
+    width: 90%;
+  }
+  /* ========= Font-style ======= */
+  .font-style {
+    font-style: italic;
+  }
+  /* ========= text-decoration ======= */
+  .text-decoration {
+      text-decoration: none;
+  }/* ========= tex-center ======= */
+  .tex-center {
+      text-align: center;
+  }
+  /* ========= Cursor ======= */
+  .cursor {
+    cursor: pointer;
+  }
+  /* Slide show */
+  
+  .carousel-item img {
+      height: 500px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+  figure.snip0016 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 390px;
+    max-height: 540px;
+    width: 100%;
+    background: #000000;
+    text-align: left;
+  }
+  figure.snip0016 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  figure.snip0016 img {
+    max-width: 100%;
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+  }
+  figure.snip0016 figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 3em;
+    width: 100%;
+    height: 100%;
+  }
+  figure.snip0016 figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 100%;
+    border-left: 4px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+  }
+  figure.snip0016 h2,
+  figure.snip0016 p {
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+  }
+  figure.snip0016 h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(30%, 0%, 0);
+    transform: translate3d(30%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  figure.snip0016 h2 span {
+    font-weight: 800;
+  }
+  figure.snip0016 p {
+    font-weight: 200;
+    -webkit-transform: translate3d(0%, 30%, 0);
+    transform: translate3d(0%, 30%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  figure.snip0016 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+  }
+  figure.snip0016:hover img {
+    opacity: 0.3;
+  }
+  figure.snip0016:hover figcaption h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  figure.snip0016:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+  }
+  figure.snip0016:hover figcaption::before {
+    background: rgba(255, 255, 255, 0);
+    left: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  
+  
+  .content-slide {
+    display: flex;
+    width: 100%;
+    padding: 4% 20%;
+    box-sizing: border-box;
+    height: 50vh;
+    }
+    
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+    height: 50vh;
+    }
+    
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+    }
+    
+  .box > span {
+    font-size: 2.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: normal;
+    }
+    
+  .box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+    }
