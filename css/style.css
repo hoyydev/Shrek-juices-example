@@ -11,14 +11,14 @@ iframe[name=page] {
       --orange: #f72;
       --black: #000;
   }
-  html {
+   html {
       font-family: sans-serif;
   }
   * {
       padding: 0;
       margin: 0;
       box-sizing: border-box
-      }
+      } 
   /* ========= Space-beetween ======= */
   .between {
       justify-content: space-between;
